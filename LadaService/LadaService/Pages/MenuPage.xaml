@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LadaService.MenuPage">
+
+    <!-- 
+         Primary Color          #121212
+         Primary Light Color    #383838
+         Primary Dark Color     #000000
+         
+         Secondary Color        #4A3564
+         Secondary Light Color  #775F92
+         Secendary Dark Color   #200F39
+         
+         Text                   #FFFFFF 
+    -->
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#121212"
+                     Orientation="Vertical">
+            <StackLayout Orientation="Vertical"
+                         Padding="40, 25, 40, 25"
+                         BackgroundColor="#383838">
+                <Label x:Name="ttl"
+                       FontSize="Title"
+                       FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                       TextColor="#FFFFFF"
+                       LineBreakMode="WordWrap"/>
+                <Label Text="Выберите модельный ряд машины."
+                       x:Name="descr"
+                       FontSize="Subtitle"
+                       FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                       TextColor="#FFFFFF"/>
+            </StackLayout>
+            <ScrollView x:Name="scrlvw1">
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand"
+                         Padding="5, 15, 5, 15"
+                         BackgroundColor="#383838">
+                <Button Text="Вернуться"
+                        Clicked="Button_Clicked"
+                        HorizontalOptions = "FillAndExpand"
+                        BorderWidth ="1"
+                        BackgroundColor="Transparent"
+                        BorderColor = "#775F92"
+                        Margin = "10, 4.5, 10, 4.5"
+                        TextColor="#FFFFFF"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

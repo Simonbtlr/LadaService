@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LadaService.Pages.TestDrivePage">
+    <ContentPage.Content>
+        <!--Задний фон-->
+        <StackLayout BackgroundColor="#121212"
+                     Orientation="Vertical"
+                     Spacing="0">
+            <!--ТопБар-->
+            <StackLayout Orientation="Horizontal"
+                         Padding="40, 25, 40, 25"
+                         BackgroundColor="#383838">
+                <!--Текст слева-->
+                <StackLayout Orientation="Vertical"
+                             HorizontalOptions="StartAndExpand">
+                    <Label Text="Title"
+                       FontSize="Title"
+                       FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                       TextColor="#FFFFFF"
+                       LineBreakMode="WordWrap"
+                       x:Name="ttl"/>
+                    <Label Text="Subtitle"
+                       x:Name="descr"
+                       FontSize="Subtitle"
+                       FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                       TextColor="#FFFFFF"/>
+                </StackLayout>
+                <!--Картинка справа-->
+                <Image x:Name="imageCar"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       Scale="2.5"
+                       Margin="0, 0, 10, 0"/>
+            </StackLayout>
+            <!--Информация-->
+            <ScrollView x:Name="scrlvw1">
+            </ScrollView>
+            <!--Кнопка вернуться-->
+            <StackLayout VerticalOptions="EndAndExpand"
+                         Padding="5, 15, 5, 15"
+                         BackgroundColor="#383838">
+                <Button Text="Вернуться"
+                        Clicked="Button_Clicked"
+                        HorizontalOptions = "FillAndExpand"
+                        BorderWidth ="1"
+                        BackgroundColor="Transparent"
+                        BorderColor = "#775F92"
+                        Margin = "10, 4.5, 10, 4.5"
+                        TextColor="#FFFFFF"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

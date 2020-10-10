@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LadaService.BrandPage"
+             Title="Brand">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#121212"
+                     Orientation="Vertical">
+            <!--ШАПКА-->
+            <StackLayout Orientation="Vertical"
+                         Padding="40, 25, 40, 25"
+                         BackgroundColor="#383838">
+                <Label Text="Добро пожаловать!" 
+                       FontSize="Title"
+                       FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                       TextColor="#FFFFFF"
+                       LineBreakMode="WordWrap"/>
+                <Label Text="Выберите интересующий вас бренд." 
+                       x:Name="descr"
+                       FontSize="Subtitle"
+                       FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                       TextColor="#FFFFFF"/>
+            </StackLayout>
+            <!--КОНТЕНТ-->
+            <ScrollView x:Name="scrlvw1">
+            </ScrollView>
+            <!--Навигация-->
+            <StackLayout VerticalOptions="EndAndExpand"
+                         Padding="5, 15, 5, 15"
+                         BackgroundColor="#383838">
+                <Button Text="Вернуться"
+                        Clicked="Button_Clicked"
+                        HorizontalOptions = "FillAndExpand"
+                        BorderWidth ="1"
+                        BackgroundColor="Transparent"
+                        BorderColor = "#775F92"
+                        Margin = "10, 4.5, 10, 4.5"
+                        TextColor="#FFFFFF"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

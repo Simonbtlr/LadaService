@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LadaService.MainPage"
+             Title="Lada Service App">
+
+    <!-- 
+         Primary Color          #121212
+         Primary Light Color    #383838
+         Primary Dark Color     #000000
+         
+         Secondary Color        #4A3564
+         Secondary Light Color  #775F92
+         Secendary Dark Color   #200F39
+         
+         Text                   #FFFFFF 
+    -->
+
+    <ContentView.Content>
+        <StackLayout BackgroundColor="#121212"
+                     Orientation="Vertical">
+            <Image Source="Ladalogo.png"
+                       Margin="50, 0, 50, 0"
+                       VerticalOptions="CenterAndExpand"/>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         Margin="50, 0, 50, 0">
+                <Entry Placeholder="Username"
+                       x:Name="userEntry"
+                       TextColor="#FFFFFF"
+                       PlaceholderColor="#FFFFFF"
+                       Completed="userEntry_Completed"
+                       FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                       IsVisible="False"
+                       Text="User"/>
+                <Entry Placeholder="Password"
+                       x:Name="passEntry"
+                       TextColor="#FFFFFF"
+                       PlaceholderColor="#FFFFFF"
+                       Completed="passEntry_Completed"
+                       FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                       IsPassword="True"
+                       IsVisible="False"
+                       Text="123456"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand"
+                         VerticalOptions="CenterAndExpand"
+                         Margin="50">
+                <Button Text="ВОЙТИ" 
+                        FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                        Clicked="Button_Clicked"
+                        BorderWidth="1"
+                        BackgroundColor="Transparent"
+                        BorderColor="#775F92"
+                        TextColor="#FFFFFF"/>
+                <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="FillAndExpand">
+                    <Label Text="Войти с правами администратора"
+                           VerticalOptions="Center"
+                           FontFamily="Fonts/pragmaticalightc.otf#PragmaticaLightC"
+                           FontSize="Body"
+                           TextColor="#775F92"/>
+                    <Switch ThumbColor="#775F92"
+                            OnColor="#200F39"
+                            IsToggled="False"
+                            HorizontalOptions="FillAndExpand"
+                            Toggled="Switch_Toggled"
+                            x:Name="adminToggle"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentPage>

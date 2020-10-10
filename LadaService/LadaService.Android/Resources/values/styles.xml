@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <style name="MainTheme" parent="MainTheme.Base">
+  </style>
+  
+  <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">#212121</item>
+    <item name="colorPrimaryDark">#121212</item>
+    <item name="colorAccent">#4a3564</item>
+    <item name="windowActionModeOverlay">true</item>
+
+    <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+  </style>
+  
+  <!--
+  <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">#212121</item>
+    <item name="colorPrimaryDark">#121212</item>
+    <item name="colorAccent">#4a3564</item>
+    <item name="windowActionModeOverlay">true</item>
+
+    <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+  </style>
+  -->
+  <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+    <!--
+    <item name="colorAccent">#FF4081</item>
+    -->
+    <item name="colorAccent">#775F92</item>
+  </style>
+
+  <style name="AppCompactDialogDarkStyle" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorAccent">#775f92</item>
+  </style>
+</resources>
